@@ -56,10 +56,10 @@ function calculateAndDraw() {
     C: (${parseCoordinatesForCalculation(document.getElementById('c').value)}) <br>
     T: (${originalT[0].toFixed(4)}, ${originalT[1].toFixed(4)}) <br>
     <hr/>
-    Distance A-B: ${distanceAB.toFixed(4)} <br>
-    Distance A-C: ${distanceAC.toFixed(4)} <br>
-    Distance from C to line AB: ${distanceCtoLineAB.toFixed(4)} <br>
-    Distance A-T: ${distanceAT.toFixed(4)} <br>
+    距離 A-B: ${distanceAB.toFixed(4)} <br>
+    距離 A-C: ${distanceAC.toFixed(4)} <br>
+    距離 點 C 到線 AB: ${distanceCtoLineAB.toFixed(4)} <br>
+    距離 A-T: ${distanceAT.toFixed(4)} <br>
     <br>
     `;
   document.getElementById('message').innerHTML = `
