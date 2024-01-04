@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2D Distance Calculator</title>
+<script src="js/tailwind-3.4.0.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-200 flex container items-center mx-auto justify-center">
+  <div class="bg-white p-6 rounded shadow-md">
+    <h2 class="text-2xl mb-4">2D Distance Calculator</h2>
+    <p class="mb-4">輸入三個點的座標 a (x1,y1)、b (x2,y2)、c (x3,y3)，計算 ab 的距離，並算出 c 點距離 ab 線段的距離。</p>
+    <div class="mb-4">
+      <div class="flex gap-2">
+        <div class="w-full">
+          <label for="a" class="block">a (x1,y1)</label>
+          <input type="text" id="a" placeholder="x,y" value="100,100" class="w-full p-2 border rounded">
+        </div>
+        <div class="w-full">
+          <label for="b" class="block">b (x2,y2)</label>
+          <input type="text" id="b" placeholder="x,y" value="130,220" class="w-full p-2 border rounded">
+        </div>
+        <div class="w-full">
+          <label for="c" class="block">c (x3,y3)</label>
+          <input type="text" id="c" placeholder="x,y" value="150,160" class="w-full p-2 border rounded">
+        </div>
+      </div>
+    </div>
+    <div class="mb-4">
+      <button id="btn" onclick="calculateAndDraw()" class="w-full p-2 bg-blue-500 text-white rounded">Calculate</button>
+    </div>
+    <div class="mt-4">
+      <p id="answer" class="text-red-500"></p>
+    </div>
+    <div class="mt-4">
+      <canvas id="canvas" width="500" height="500"></canvas>
+    </div>
+    <div class="mt-4">
+      <p id="message"></p>
+    </div>
+  </div>
+</body>
+<script src="js/main.js"></script>
+</html>
